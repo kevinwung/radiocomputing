@@ -3,3 +3,4 @@
 
 frequencies = list( 118 + x * 0.025 for x in range(int((136.975 - 118) / 0.025 + 2)))
 print(frequencies)
+
