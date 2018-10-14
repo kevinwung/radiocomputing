@@ -19,11 +19,11 @@ for freq1 in frequencies:
             fileHandle.write(f'三阶互调组： {freq1}MHz 与 {freq2}MHz 互调 {freq3}MHz \n')
 #            print(f'三阶互调组： {freq1}MHz 与 {freq2}MHz 互调 {freq3}MHz \n')
             count += 1
-        elif freq1 * 2 + freq2 in frequencies:
-            freq3 = freq1 * 2 + freq2
-            fileHandle.write(f'三阶互调组： {freq1}MHz 与 {freq2}MHz 互调 {freq3}MHz \n')
+#        elif freq1 * 2 + freq2 in frequencies:
+#            freq3 = freq1 * 2 + freq2
+#            fileHandle.write(f'三阶互调组： {freq1}MHz 与 {freq2}MHz 互调 {freq3}MHz \n')
 #            print(f'三阶互调组： {freq1}MHz 与 {freq2}MHz 互调 {freq3}MHz \n')
-            count += 1
+#            count += 1
 
 #print('一共有{0}组互调组'.format(count))
 fileHandle.write('一共有{0}组互调组'.format(count))
