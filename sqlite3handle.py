@@ -17,7 +17,7 @@ def IsMod(f1, f2, database):
 def ModList(f1, database):
     conn = sqlite3.connect(database)
     c = conn.cursor()
-    c.execute('SELECT FREQ2, MOD3FREQ FROM MOD3 WHERE ? = FREQ1;',(f1, ))
+    c.execute('SELECT FREQ2, MOD3FREQ FROM MOD3 WHERE ? = FREQ1;',(f1, )) #逗号后面是元组，一个变量也要加逗号
     print('All the modulations of the {0}MHz: '.format(f1))
     print(c.fetchall())
 
